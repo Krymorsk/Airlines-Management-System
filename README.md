@@ -313,8 +313,8 @@ CREATE TABLE `adminlogin` (
 
 -- Insert data into `adminlogin`
 INSERT INTO `adminlogin` VALUES 
-('admin','admin','aman','8989898989'),
-('arish','1234','Arish Ahmad','8318877804');
+('admin','admin','arish','8989898989'),
+
 
 -- Table structure for table `bookedflight`
 DROP TABLE IF EXISTS `bookedflight`;
@@ -334,13 +334,6 @@ CREATE TABLE `bookedflight` (
   PRIMARY KEY (`tid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
--- Insert data into `bookedflight`
-INSERT INTO `bookedflight` VALUES 
-('38659','delhi','lucknow','airbus','69000','FX123','BIGAIR','123','123','arish','arish ahmad','booked'),
-('44141','delhi','lucknow','airbus','69000','FX123','BIGAIR','45645','847897','arish','arish ahmad','Canceled'),
-('46897','delhi','null','null','null','null','','','','arish','',NULL),
-('58321','delhi','lucknow','airbus','69000','FX123','BIGAIR','','','arish','arish ahmad',NULL),
-('89501','delhi','lucknow','airbus','69000','FX123','BIGAIR','','','arish','arish ahmad',NULL);
 
 -- Table structure for table `cancelflight`
 DROP TABLE IF EXISTS `cancelflight`;
@@ -360,9 +353,6 @@ CREATE TABLE `cancelflight` (
   PRIMARY KEY (`tid`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
--- Insert data into `cancelflight`
-INSERT INTO `cancelflight` VALUES 
-('44141','delhi','lucknow','airbus','69000','FX123','BIGAIR','45645','847897','arish','arish ahmad','nai jaunga');
 
 -- Table structure for table `cargo`
 DROP TABLE IF EXISTS `cargo`;
@@ -417,11 +407,6 @@ CREATE TABLE `passenger` (
   PRIMARY KEY (`username`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
--- Insert data into `passenger`
-INSERT INTO `passenger` VALUES 
-('arish','arish ahmad','23','07112001','lko','8318877804','arish','Canadian','Male','1234'),
-('krymorsk','arish ahmad','23','07112001','lko','8318877804','arish','Canadian','Male','1234');
-
 -- Table structure for table `signup`
 DROP TABLE IF EXISTS `signup`;
 CREATE TABLE `signup` (
@@ -432,10 +417,7 @@ CREATE TABLE `signup` (
   PRIMARY KEY (`username`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
--- Insert data into `signup`
-INSERT INTO `signup` VALUES 
-('arish','arish ahmad','1234','8318877804');
-```
+
 
 ### Instructions to Create Database
 
